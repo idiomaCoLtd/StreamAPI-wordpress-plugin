@@ -343,8 +343,9 @@
       $return = array();
 
       $langs = $icom->get_body();
-      foreach($langs as $val) { $return[$val->code] = $val; }
-
+      if(isset($langs)){
+        foreach($langs as $val) { $return[$val->code] = $val; }
+      }
       return $return;
     }
 
