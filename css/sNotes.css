@@ -1,0 +1,39 @@
+
+.ui-resizable { position: relative;}
+.ui-resizable-handle { position: absolute;font-size: 0.1px;z-index: 99999; display: block;}
+.ui-resizable-disabled .ui-resizable-handle, .ui-resizable-autohide .ui-resizable-handle { display: none; }
+.ui-resizable-n { cursor: n-resize; height: 7px; width: 100%; top: -5px; left: 0; }
+.ui-resizable-s { cursor: s-resize; height: 7px; width: 100%; bottom: -5px; left: 0; }
+.ui-resizable-e { cursor: e-resize; width: 7px; right: -5px; top: 0; height: 100%; }
+.ui-resizable-w { cursor: w-resize; width: 7px; left: -5px; top: 0; height: 100%; }
+.ui-resizable-se { cursor: se-resize; width: 12px; height: 12px; right: 1px; bottom: 1px; }
+.ui-resizable-sw { cursor: sw-resize; width: 9px; height: 9px; left: -5px; bottom: -5px; }
+.ui-resizable-nw { cursor: nw-resize; width: 9px; height: 9px; left: -5px; top: -5px; }
+.ui-resizable-ne { cursor: ne-resize; width: 9px; height: 9px; right: -5px; top: -5px;}
+.ui-icon { background-image: url('http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/images/ui-icons_222222_256x240.png'); }
+.ui-icon-gripsmall-diagonal-se { background-position: -64px -224px; }
+
+#sNote-instructions { position: fixed; top: 100px; right: 0; width: 400px; z-index: 99999; transition: all 250ms ease 0s; }
+#sNote-instructions.sNote-instructions-small { right: -350px; }
+#sNote-instructions-small { position: absolute; top: -2px; left: 0; width: 50px; height: 71px; background: url('../img/notes/fixed_box_info.png') 0 0 no-repeat; cursor: pointer; }
+#sNote-instructions-large { position: absolute; top: 0; left: 50px; width: 330px; padding: 10px; background: url('../img/notes/fixed_box_info_large.png') 0 0 repeat; cursor: pointer; }
+#sNote-instructions h1 { color: #000; font-size: 130%; margin: 0 0 10px 0; font-weight: normal; }
+#sNote-instructions h2 { color: #1fb15a; font-size: 100%; margin: 0 0 10px 0; line-height: 1.1; font-weight: normal; }
+#sNote-instructions ol li { font-size: 90%; line-height: 1; }
+
+#sNotes-border-top, #sNotes-border-bottom { background: #f00; height: 3px; position: fixed; z-index: 99999; transition: all 300ms ease 0s; }
+#sNotes-border-left, #sNotes-border-right { background: #f00; width: 3px; position: fixed; z-index: 99999; transition: all 300ms ease 0s; }
+
+div.sNote-all { position: absolute; z-index: 99998; }
+div.sNote-onlyPoint { width: 0 !important; height: 0 !important; border: 0 !important; }
+div.sNote-rect { background: url('../img/notes/bg_rect.png') 0 0 repeat; position: relative; transition: all 150ms ease 0s; }
+div.sNote-rect .sNote-content { width: 28px; height: 25px; overflow: visible; position: relative; }
+div.sNote-rect .sNote-content .sNote-point { position: absolute; top: 0; left: 0; cursor: move; width: 28px; height: 25px; line-height: 22px; text-align: center; font-size: 10px; font-weight: bold; background: url('../img/notes/comment.png') 0 0 no-repeat; z-index: 1; border-radius: 2px; border: 1px solid #f00; }
+div.sNote-rect.sNote-onlyPoint .sNote-content .sNote-point { border: 1px solid #ff0; cursor: default; }
+div.sNote-rect .sNote-content .sNote-note { display: none; position: absolute; cursor: move; overflow: hidden; border: 1px solid #848484; background-color: #fcfde3; padding: 25px 10px 10px 10px; z-index: 2; opacity: 0.75; border-radius: 2px; }
+div.sNote-rect .sNote-content .sNote-note.sNote-active { opacity: 1 !important; }
+div.sNote-rect .sNote-content .sNote-note .sNote { cursor: auto; }
+div.sNote-rect .sNote-content .sNote-note .sNote-delete { height: 15px; width: 15px; position:absolute; top: 3px; right: 3px; cursor: pointer; background: url('../img/notes/icon_delete.png') 0 0 no-repeat; }
+div.sNote-rect .sNote-content .sNote-note .sNote-date { position: absolute; top: 3px; left: 10px; color: #000; text-decoration: none; font-size: 12px; font-weight: bold; }
+div.sNote-rect .sNote-content .sNote-note .sNote-textarea { width: 98%; height: 98%; font-size: 12px; resize: none; }
+div.sNote-rect .sNote-content .sNote-note .sNote-textarea[readonly='readonly'] { background: #f0f0f0; color: #555; }
