@@ -341,7 +341,8 @@
   if (is_admin() == false) {
 
     require_once dirname(__FILE__) . '/stream-api_proofreading.php';
-    require_once dirname(__FILE__) . '/stream-api_lang_switcher_widget.php';
+    //temporary not used
+    //require_once dirname(__FILE__) . '/stream-api_lang_switcher_widget.php';
     add_action('init', 'icom_init_hooks'); // inicializace hooků pro front-end
 
   // INICIALIZACE DAT PRO BACK-END
