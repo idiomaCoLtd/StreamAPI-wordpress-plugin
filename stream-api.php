@@ -23,8 +23,8 @@
   // ========================================================
   // your authorization key and secret you've got from idioma
   // ========================================================
-  $my_consumer_key = 'Berger_consumer_key';
-  $my_consumer_secret = '$=_ssD1H+%LD-B=UAY|r5*Fv@v0SMGU7';
+  $my_consumer_key = 'YOUR_CONSUMER_KEY';
+  $my_consumer_secret = 'YOUR_CONSUMER_SECRET';
 
   session_start();
 
